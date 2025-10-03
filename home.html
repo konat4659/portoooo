@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RajaIkan - Elegan</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      margin: 0 10px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      background-color: #0059b3;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #0073e6;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+
+    section {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 30px;
+      margin-bottom: 40px;
+    }
+
+    .profile-img {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .profile-img img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #003366;
+    }
+
+    .rate {
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    .rate label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .hobi-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .hobi-item {
+      flex: 1 1 calc(33% - 20px);
+      background-color: #f0f0f0;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      max-width: 300px;
+    }
+
+    .hobi-item img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .slider {
+      display: flex;
+      overflow-x: auto;
+      gap: 20px;
+      padding: 10px 0;
+      scroll-snap-type: x mandatory;
+      justify-content: flex-start;
+    }
+
+    .slider img {
+      width: 300px;
+      height: 200px;
+      border-radius: 10px;
+      object-fit: cover;
+      scroll-snap-align: start;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    footer a {
+      color: #99ccff;
+      text-decoration: none;
+    }
+
+    @media screen and (max-width: 768px) {
+      .hobi-item {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MY PROFILE</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#hobi">Hobi</a>
+      <a href="#prestasi">Prestasi</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME SECTION -->
+    <section id="home">
+      <div class="profile-img">
+        <img src="ikannnnn.jpg" alt="Raja Ikan" />
+        <p><strong>RAJA IKAN</strong></p>
+      </div>
+      <h2>Tentang Saya</h2>
+      <p>
+        Perkenalkan saya Raja Ikan. Saya adalah raja dari ikan. Sebelum jadi raja, saya hanyalah ikan biasa. Ceritanya panjang dan menyedihkan.
+      </p>
+      <div class="rate">
+        <p><strong>Rate perjalanan hidup saya:</strong></p>
+        <form>
+          <label><input type="radio" name="rate" value="sedih" /> Sedih sekali</label>
+          <label><input type="radio" name="rate" value="mengharukan" /> Mengharukan banget</label>
+          <label><input type="radio" name="rate" value="memotivasi" /> Sangat memotivasi</label>
+        </form>
+      </div>
+    </section>
+
+    <!-- HOBI SECTION -->
+    <section id="hobi">
+      <h2>Hobi Saya</h2>
+      <div class="hobi-container">
+        <div class="hobi-item">
+          <img src="terumbu.jpg" alt="Terumbu Karang">
+          <h3>Menjelajahi Terumbu Karang</h3>
+          <p>Saya sangat suka berenang di antara terumbu karang yang indah.</p>
+        </div>
+        <div class="hobi-item">
+          <img src="hindar-pancing.jpg" alt="Menghindari Pancing">
+          <h3>Menghindari Pancing</h3>
+          <p>Skill utama saya adalah menghindari pancingan dengan gaya akrobatik.</p>
+        </div>
+        <div class="hobi-item">
+          <img src="nyanyi-laut.jpg" alt="Bernyanyi di Laut">
+          <h3>Bernyanyi di Laut</h3>
+          <p>Saat malam, saya dan ikan lainnya bernyanyi bersama.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRESTASI SECTION -->
+    <section id="prestasi">
+      <h2>Prestasi Saya</h2>
+      <p><strong>Akademik & Non-Akademik</strong></p>
+      <div class="slider">
+        <img src="prestasi1.jpg" alt="Prestasi Akademik 1">
+        <img src="prestasi2.jpg" alt="Prestasi Non-Akademik 2">
+        <img src="prestasi3.jpg" alt="Prestasi Akademik 3">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Jangan lupa subscribe untuk mengikuti kegiatan saya</p>
+    <a href="https://youtu.be/hWxMh_nQH80?si=uhIIDZbLn70KByCp" target="_blank">YouTube</a>
+  </footer>
+</body>
+</html>
